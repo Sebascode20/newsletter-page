@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --bg-main-color: #f9fafb;
+  --bg-color-button: #284bce;
+  --bg-form-color: #ffffff;
+  --header-color: #000000;
+  --border-input-color: #e5e7eb;
+  --placeholder-color: #394150;
+  --text-color: #6c727f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-main-color);
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: clamp(1rem, 6vw, 3rem);
+  font-weight: 600;
+  color: var(--header-color);
+  text-wrap: balance;
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: var(--bg-form-color);
+  border-radius: 16px;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+}
+
+.form input[type="email"],
+.form input[type="submit"] {
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.form input[type="email"] {
+  border: 1px solid var(--border-input-color);
+  background-color: var(--bg-main-color);
+}
+
+.form input[type="email"]::placeholder {
+  text-align: center;
+  color: var(--placeholder-color);
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.form input[type="submit"] {
+  background-color: var(--bg-color-button);
+  color: var(--bg-form-color);
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form__text {
+  color: var(--placeholder-color);
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-size: clamp(0.570rem, 3.2vw, 0.875rem);
+  text-align: justify;
+  line-height: 1.2;
+}
+
+.main {
+  flex: 1;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main img {
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: cover;
+}
+
+.main__text {
+  font-size: clamp(0.9rem, 2.2vw, 1.25rem);
+  font-weight: 400;
+  color: var(--text-color);
+  text-wrap: pretty;
+  text-align: center;
+  white-space: break-spaces;
+}
